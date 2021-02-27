@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Boolean Preferences">
+        <CheckBoxPreference
+            android:key="settings_key_checkbox"
+            android:title="Checkbox"
+            android:summary="Describe my preference"
+            android:icon="@drawable/ic_baseline_add_chart_24" />
+        <SwitchPreference
+            android:key="settings_key_switch"
+            android:title="Switch"
+            android:summary="Describe my preference"
+            android:icon="@drawable/ic_baseline_add_chart_24" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Another preferences">
+        <SeekBarPreference
+            android:key="settings_key_seek_bar"
+            android:title="Seek bar"
+            android:summary="Describe my preference"
+            android:icon="@drawable/ic_baseline_add_chart_24"
+            android:max="100"
+            android:defaultValue="75"
+            app:min="50"/>
+        <DropDownPreference
+            android:key="settings_key_dropdown"
+            android:title="Drop down"
+            android:summary="Describe my preference"
+            android:icon="@drawable/ic_baseline_add_chart_24"
+            android:entries="@array/team_entries"
+            android:entryValues="@array/team_values"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Modals preferences"
+        app:initialExpandedChildrenCount="0">
+        <EditTextPreference
+            android:key="settings_key_text"
+            android:title="Edit text"
+            android:icon="@drawable/ic_baseline_add_chart_24"
+            android:dialogTitle="Set your text"
+            android:dialogMessage="Please do not be so long"
+            android:positiveButtonText="Sure!"
+            android:negativeButtonText="No!"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:key="settings_key_list"
+            android:title="List"
+            android:icon="@drawable/ic_baseline_add_chart_24"
+            android:entries="@array/team_entries"
+            android:entryValues="@array/team_values"
+            app:useSimpleSummaryProvider="true"/>
+        <MultiSelectListPreference
+            android:key="settings_key_multi_select_list"
+            android:title="Multi Select List"
+            android:summary="Summary multi select list"
+            android:icon="@drawable/ic_baseline_add_chart_24"
+            android:entries="@array/team_entries"
+            android:entryValues="@array/team_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

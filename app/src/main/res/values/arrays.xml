@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="team_entries">
+        <item>Santa Cruz</item>
+        <item>Náutico</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="team_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
